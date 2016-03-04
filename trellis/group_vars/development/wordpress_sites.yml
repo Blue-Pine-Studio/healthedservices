@@ -1,0 +1,28 @@
+# Documentation: https://roots.io/trellis/docs/local-development-setup/
+wordpress_sites:
+  healthedservices.com:
+    site_hosts:
+      - healthedservices.dev
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    site_install: true
+    site_title: healthedservices Site
+    admin_user: admin
+    # admin_password: (defined in group_vars/development/vault.yml)
+    admin_email: admin@healthedservices.dev
+    initial_permalink_structure: /%postname%/ # applied only at time of WP install and when `site_install: true`
+    multisite:
+      enabled: false
+      subdomains: false
+    ssl:
+      enabled: false
+    cache:
+      enabled: false
+      duration: 30s
+    env:
+      disable_wp_cron: true
+      wp_home: http://healthedservices.dev
+      wp_siteurl: http://healthedservices.dev/wp
+      wp_env: development
+      db_name: healthedservices_dev
+      db_user: healthedservices_dbuser
+      # db_password: (defined in group_vars/development/vault.yml)

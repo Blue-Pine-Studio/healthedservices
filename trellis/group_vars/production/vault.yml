@@ -1,0 +1,22 @@
+# Documentation: https://roots.io/trellis/docs/vault/
+vault_mysql_root_password: productionpw
+
+# Documentation: https://roots.io/trellis/docs/security/
+vault_sudoer_passwords:
+  admin: $6$rounds=100000$JUkj1d3hCa6uFp6R$3rZ8jImyCpTP40e4I5APx7SbBvDCM8fB6GP/IGOrsk/GEUTUhl1i/Q2JNOpj9ashLpkgaCxqMqbFKdZdmAh26/
+
+# Variables to accompany `group_vars/production/wordpress_sites.yml`
+vault_wordpress_sites:
+  healthedservices.com:
+    env:
+      db_password: healthedservices_dbpassword
+      # Generate your keys here: https://api.wordpress.org/secret-key/1.1/salt/
+      # These CANNOT contain the characters "{%" or "{{" in succession
+      auth_key: "6xvkFDM$ZFW_610:-{z$nLOZ+0y[e8/%N,hUbT*v`-y_b!t@!U_>j{:O`cD[zs6/"
+      secure_auth_key: "jF7#LM4~ZAzk=4s[Z4PmK50a!!EdsGY#_bC{;@p0Ss73;IK&JNqzGfe*DYX,D}o,"
+      logged_in_key: "vC6DCQTa#Udp[/gEqtJLzO~TY1yPLWN5e!cd|fiJoJ4x5Y#2q1?Ju|f0X.bugYXp"
+      nonce_key: "C}E9XhET9/MkE6@7~-ufP<K4kMT|l)M&me!2{b2KDY3eN2X7FhtaVRY1{,<29abh"
+      auth_salt: "u-|X-_x(@5lreIGkCTht_{+GR.0|J|3zjzPz6&;gMex;-pywVTs`gw.Izj2>yD#l"
+      secure_auth_salt: "0cKkmKwIjk7AQro6*o(yhs7e?}%X_!F:#?JnLo--G<M+n*%npxpx+C?~!I@2/C^h"
+      logged_in_salt: "@`P^zAKG8n[k&Qk|OoA0,Q0Icf6Ao@C{T/rp]i3}O8Envo=3F!.]|SW}RpQX}lJ|"
+      nonce_salt: "htSvw.8O5)+;fT<:r]3+3xGmzwk-Jq-z,isDTN+y|i{}@2-8t$+V8U}37@/+/Gr$"
