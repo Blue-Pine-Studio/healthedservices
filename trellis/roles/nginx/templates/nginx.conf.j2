@@ -69,7 +69,7 @@ http {
 
   # Speed up file transfers by using sendfile() to copy directly
   # between descriptors rather than using read()/write().
-  sendfile        on;
+  sendfile        off;
 
   # Tell Nginx not to send out partial frames; this increases throughput
   # since TCP frames are filled up before being sent out. (adds TCP_CORK)
