@@ -1,0 +1,121 @@
+/**********************
+  Front Page Styles
+**********************/
+
+.jumbotron {
+  border-radius: 0;
+  margin-bottom: 0;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/jumbotron.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 63vh;
+  h1 {
+    text-align: center;
+    color: #0ea474;
+  }
+  h2 {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+
+/* =======================
+  Class Buttons
+=========================*/
+
+.class-button {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  width: 25vw;
+  height: 25vw;
+}
+
+.row .class-button:nth-child(1) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/class-button-01.jpg');
+  &:hover {
+    background: url('../images/class-button-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row .class-button:nth-child(2) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/class-button-02.jpg');
+  &:hover {
+    background: url('../images/class-button-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row .class-button:nth-child(3) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/class-button-03.jpg');
+  &:hover {
+    background: url('../images/class-button-03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row .class-button:nth-child(4) {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/class-button-04.jpg');
+  &:hover {
+    background: url('../images/class-button-04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* ============================================================
+  Parallax
+============================================================ */
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+}
+
+section.module p:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding: 40px 0;
+}
+
+section.module.parallax {
+  height: 25vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 150px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+  background-image: url("../images/parallax.jpg");
+}

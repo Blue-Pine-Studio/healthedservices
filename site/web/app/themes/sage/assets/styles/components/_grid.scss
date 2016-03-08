@@ -4,6 +4,7 @@
   .sidebar-primary & {
     @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
   }
+  padding: 0;
 }
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);

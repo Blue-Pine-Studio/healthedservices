@@ -2,7 +2,22 @@
   Navigation Styles
 **********************/
 
+.banner {
+  height: 50px;
+}
+
 .nav > li {
   display: inline-block !important;
 }
 
+.navbar-right {
+  margin-right: 0;
+}
+
+.navbar-inverse {
+  background-color: #0ea474 !important;
+  a {
+    color: #fff !important;
+  }
+  border: none;
+}
