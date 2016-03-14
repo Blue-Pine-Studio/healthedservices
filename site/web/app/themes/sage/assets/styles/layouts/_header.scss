@@ -10,14 +10,19 @@
   display: inline-block !important;
 }
 
-.navbar-right {
+nav.navbar-right {
   margin-right: 0;
+}
+
+ul.navbar-right {
+  margin-right: 10%;
 }
 
 .navbar-inverse {
   background-color: #0ea474 !important;
   a {
     color: #fff !important;
+    font-size: 3rem;
   }
   border: none;
 }

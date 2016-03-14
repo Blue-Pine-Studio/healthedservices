@@ -1,9 +1,25 @@
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <div class="container-fluid">
-    <h1>Hello, world!</h1>
-    <h2>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</h2>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+<div class="homepage-hero-module">
+  <div class="video-container">
+    <div class="title-container">
+      <div class="headline">
+          <h1>Hello, world!</h1>
+      </div>
+      <div class="description">
+        <div class="inner">
+          <h2>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</h2>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="filter"></div>
+    <video autoplay loop class="fillWidth">
+      <source src="<?= get_template_directory_uri(); ?>/dist/videos/cpr_video.webm" type="video/webm">
+      <source src="<?= get_template_directory_uri(); ?>/dist/videos/cpr_video.mp4" type="video/mp4">
+      <source src="<?= get_template_directory_uri(); ?>/dist/videos/cpr_video.ogv" type="video/ogg">
+    </video>
+    <div class="poster hidden">
+      <img src="<?= get_template_directory_uri(); ?>/dist/images/cpr_frame.jpg" alt="">
+    </div>
   </div>
 </div>
 
