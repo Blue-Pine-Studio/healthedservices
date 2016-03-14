@@ -102,7 +102,7 @@ $( document ).ready(function() {
 
 function scaleVideoContainer() {
 
-    var height = ($(window).height()) * .63;
+    var height = ($(window).height()) * 0.63;
     var unitHeight = parseInt(height) + 'px';
     $('.homepage-hero-module').css('height',unitHeight);
 
