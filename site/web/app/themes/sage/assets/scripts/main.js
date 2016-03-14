@@ -80,16 +80,9 @@
 /** Reusable Functions **/
 /********************************************************************/
 
-jQuery(document).ready(function($){
-  //you can now use $ as your jQuery object.
-  var body = $( 'body' );
-});
-
-
-(function ($) {
   function scaleVideoContainer() {
 
-    var height = ($(window).height()) * 0.63;
+    var height = ($(window).height()) * .63;
     var unitHeight = parseInt(height) + 'px';
     $('.homepage-hero-module').css('height', unitHeight);
 
@@ -142,5 +135,3 @@ jQuery(document).ready(function($){
 
     });
   }
-
-})(jQuery);
