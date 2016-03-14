@@ -13,9 +13,9 @@
     </div>
     <div class="filter"></div>
     <video autoplay loop class="fillWidth">
-      <source src="<?= get_template_directory_uri(); ?>/dist/videos/cpr_video.webm" type="video/webm">
-      <source src="<?= get_template_directory_uri(); ?>/dist/videos/cpr_video.mp4" type="video/mp4">
-      <source src="<?= get_template_directory_uri(); ?>/dist/videos/cpr_video.ogv" type="video/ogg">
+      <source src="<?= get_template_directory_uri(); ?>/dist/images/videos/cpr_video.webm" type="video/webm">
+      <source src="<?= get_template_directory_uri(); ?>/dist/images/videos/cpr_video.mp4" type="video/mp4">
+      <source src="<?= get_template_directory_uri(); ?>/dist/images/videos/cpr_video.ogv" type="video/ogg">
     </video>
     <div class="poster hidden">
       <img src="<?= get_template_directory_uri(); ?>/dist/images/cpr_frame.jpg" alt="">
