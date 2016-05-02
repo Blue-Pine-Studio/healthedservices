@@ -2,6 +2,14 @@
   Front Page Styles
 **********************/
 
+.comingsoon {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/comingsoon.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
   h1 {
     text-align: center;
     color: #0ea474;
